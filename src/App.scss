@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+.background {
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 0, 0, 1) 29%,
+    rgba(99, 99, 99, 1) 93%,
+    rgba(99, 99, 99, 1) 100%
+  ); /* ff3.6+ */
+  background: -webkit-gradient(
+    radial,
+    center center,
+    0px,
+    center center,
+    100%,
+    color-stop(0%, rgba(255, 0, 0, 1)),
+    color-stop(29%, rgba(255, 0, 0, 1)),
+    color-stop(93%, rgba(99, 99, 99, 1)),
+    color-stop(100%, rgba(99, 99, 99, 1))
+  ); /* safari4+,chrome */
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 0, 0, 1) 29%,
+    rgba(99, 99, 99, 1) 93%,
+    rgba(99, 99, 99, 1) 100%
+  ); /* safari5.1+,chrome10+ */
+  background: -o-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 0, 0, 1) 29%,
+    rgba(99, 99, 99, 1) 93%,
+    rgba(99, 99, 99, 1) 100%
+  ); /* opera 11.10+ */
+  background: -ms-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 0, 0, 1) 29%,
+    rgba(99, 99, 99, 1) 93%,
+    rgba(99, 99, 99, 1) 100%
+  ); /* ie10+ */
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 0, 0, 1) 29%,
+    rgba(99, 99, 99, 1) 93%,
+    rgba(99, 99, 99, 1) 100%
+  ); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF0000', endColorstr='#636363',GradientType=1 ); /* ie6-9 */
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  @extend .flex;
+  @extend .background;
+  height: 100vh;
+}
+
+#header {
+  @extend .flex;
+  align-items: center;
+}
+
+#pomodoroClock {
+  height: 400px;
+  width: 650px;
+  background-color: whitesmoke;
+  border: 1px solid #000;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: -2px 10px 37px 19px rgba(0, 0, 0, 0.75);
+}
